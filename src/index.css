@@ -65,7 +65,20 @@ h2 {
   color: #e95569;
   margin: 0 10px;
 }
-
+.no-data-found {
+  padding: 20px;
+  background: #fff;
+  width: 300px;
+  text-align: center;
+}
+.no-data-found button {
+  background: #0bba47;
+  padding: 5px 12px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
 @media screen and (max-width: 768px) {
   .tour-list {
     padding: 20px;

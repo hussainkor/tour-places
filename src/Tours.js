@@ -19,13 +19,17 @@ export default function Tours() {
         displayMsg();
     }
 
+    const reloadData = () => {
+        setTourList(tourDatas)
+    }
+
     return (
         <div>
             <h1>Our Tours</h1>
             {msg && <span className='delete-msg'>{msg}</span>}
 
             <div className='tour-list'>
-                {tourList.length > 0 ? tourList.map((tour) => <Tour key={tour.id} tour={tour} handleDelete={handleDelete} />) : <Loading />}
+                {tourList.length > 0 ? tourList.map((tour) => <Tour key={tour.id} tour={tour} handleDelete={handleDelete} />) : <Loading reloadData={reloadData} />}
             </div>
 
         </div>
