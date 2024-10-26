@@ -18,7 +18,7 @@ h1 {
   margin-bottom: 10px;
 }
 .tour-list {
-  width: 700px;
+  max-width: 900px;
   padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +26,7 @@ h1 {
   justify-content: space-around;
 }
 .tour-box {
-  flex-basis: 300px;
+  flex-basis: 260px;
   padding: 10px;
   background: #f3f3f3;
 }
@@ -60,4 +60,24 @@ h1 {
   background: #f0d5d8;
   color: #e95569;
   margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .tour-list {
+    padding: 20px;
+  }
+  .tour-box {
+    flex-basis: 330px;
+    padding: 10px;
+    background: #f3f3f3;
+  }
+}
+@media screen and (max-width: 550px) {
+  .tour-list {
+    flex-direction: column;
+  }
+  .tour-box {
+    flex-basis: unset;
+    flex: 1 !important;
+  }
 }
